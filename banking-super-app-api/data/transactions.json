@@ -1,0 +1,86 @@
+[
+  {
+    "id": "tx_1",
+    "accountId": "acc_1",
+    "type": "income",
+    "amount": 350000,
+    "currency": "KZT",
+    "category": "salary",
+    "description": "Зарплата за март",
+    "status": "success",
+    "relatedAccountId": null,
+    "createdAt": "2025-03-01T08:00:00.000Z"
+  },
+  {
+    "id": "tx_2",
+    "accountId": "acc_1",
+    "type": "expense",
+    "amount": -15000,
+    "currency": "KZT",
+    "category": "groceries",
+    "description": "Продукты в Магнуме",
+    "status": "success",
+    "relatedAccountId": null,
+    "createdAt": "2025-03-05T18:30:00.000Z"
+  },
+  {
+    "id": "tx_3",
+    "accountId": "acc_1",
+    "type": "expense",
+    "amount": -3500,
+    "currency": "KZT",
+    "category": "utilities",
+    "description": "Оплата: Коммунальные услуги (Astana LRT)",
+    "status": "success",
+    "relatedAccountId": null,
+    "createdAt": "2025-03-10T12:00:00.000Z"
+  },
+  {
+    "id": "tx_4",
+    "accountId": "acc_1",
+    "type": "expense",
+    "amount": -50000,
+    "currency": "KZT",
+    "category": "transfer",
+    "description": "Перевод → **** **** **** 5432",
+    "status": "success",
+    "relatedAccountId": "acc_4",
+    "createdAt": "2025-03-15T14:20:00.000Z"
+  },
+  {
+    "id": "tx_5",
+    "accountId": "acc_4",
+    "type": "income",
+    "amount": 50000,
+    "currency": "KZT",
+    "category": "transfer",
+    "description": "Перевод ← **** **** **** 5678",
+    "status": "success",
+    "relatedAccountId": "acc_1",
+    "createdAt": "2025-03-15T14:20:00.000Z"
+  },
+  {
+    "id": "tx_6",
+    "accountId": "acc_2",
+    "type": "income",
+    "amount": 1250000,
+    "currency": "KZT",
+    "category": "deposit",
+    "description": "Первоначальный депозит",
+    "status": "success",
+    "relatedAccountId": null,
+    "createdAt": "2025-01-20T11:05:00.000Z"
+  },
+  {
+    "id": "tx_7",
+    "accountId": "acc_3",
+    "type": "income",
+    "amount": 3500,
+    "currency": "USD",
+    "category": "transfer",
+    "description": "Пополнение валютной карты",
+    "status": "success",
+    "relatedAccountId": null,
+    "createdAt": "2025-02-01T09:35:00.000Z"
+  }
+]

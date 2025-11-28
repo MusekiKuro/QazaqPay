@@ -1,0 +1,37 @@
+[
+  {
+    "id": "tpl_1",
+    "name": "Коммунальные услуги",
+    "category": "utilities",
+    "provider": "Astana LRT",
+    "fields": ["accountNumber", "period"]
+  },
+  {
+    "id": "tpl_2",
+    "name": "Мобильная связь",
+    "category": "mobile",
+    "provider": "Beeline Kazakhstan",
+    "fields": ["phoneNumber"]
+  },
+  {
+    "id": "tpl_3",
+    "name": "Интернет",
+    "category": "internet",
+    "provider": "Kazakhtelecom",
+    "fields": ["contractNumber"]
+  },
+  {
+    "id": "tpl_4",
+    "name": "Мобильная связь",
+    "category": "mobile",
+    "provider": "Kcell",
+    "fields": ["phoneNumber"]
+  },
+  {
+    "id": "tpl_5",
+    "name": "ТВ подписка",
+    "category": "entertainment",
+    "provider": "Beeline TV",
+    "fields": ["contractNumber"]
+  }
+]

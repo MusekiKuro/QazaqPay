@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Сервисы / Маркетплейс</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+    </style>
+<script src="app.js"></script>
+
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102218",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-black dark:text-white">arrow_back</span>
+</div>
+<h1 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Сервисы</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-black dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+<!-- Spacer -->
+<div class="h-2 bg-background-light dark:bg-background-dark"></div>
+<!-- Section Header: Recommended -->
+<h2 class="text-black dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Рекомендовано для вас</h2>
+<!-- Carousel: Recommended Services -->
+<div class="flex overflow-x-auto no-scrollbar">
+<div class="flex items-stretch px-4 gap-3 py-2">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white/50 dark:bg-white/5 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.2)] min-w-[280px]">
+<div class="w-full bg-center bg-no-repeat aspect-[2/1] bg-cover rounded-t-xl flex flex-col" data-alt="Abstract gradient image for a taxi service" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDInxoRAgP_CrnLGyNdYfQ3BXJPC1aaAWIhTqQM1osz5NG4usb2B6pe4UfwZtQSenmPWXFsmGbgFDpY3WCnCU7QsWwOjIifat2_dQTPh0JyZYZMvPUTX7P-EhK_wxw057MmSJlTlp-8Nh-8lBn4NtIqdnuFMeqD7-FiJQyO4Nkob5IngrKx1bt6iO1XQUK3gbNDCBaSoh8xKSSw62ohqZfPfOfOldBIaMliS_xDBbEuDSrHFgswxQ_h31nC8jm8jLLAnAfXtnudEDs");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Заказать такси</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Быстро и удобно с Yandex Go</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Перейти</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white/50 dark:bg-white/5 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.2)] min-w-[280px]">
+<div class="w-full bg-center bg-no-repeat aspect-[2/1] bg-cover rounded-t-xl flex flex-col" data-alt="Abstract gradient image for a flight booking service" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCymVcJeC0QGRr1-DxLN8LxohB3mC0fXePnAbcaLfEl79Lm00jD38h5yzHmHpowxhgXao1UUfkjSR-HMXbNlqcUYzd8EW08U1XacbXUzWSEExhjzxOezUkVZ2e8pnI51vVyYH8rU8-aKk_tGAXUHafn4aAiq29XM5fmJi5FEbpAVBMgEc0U3Thm1-gU0gjGk5sd5qlbyqMMtziwKY3p_THufVr6bfqs2soeHY6lhfucKQMaipPXrIow-JCCMy4qjQb62h4o-3z2L-4");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Купить авиабилеты</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Выгодные предложения от Aviata.kz</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Перейти</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white/50 dark:bg-white/5 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.2)] min-w-[280px]">
+<div class="w-full bg-center bg-no-repeat aspect-[2/1] bg-cover rounded-t-xl flex flex-col" data-alt="Abstract gradient image for a movie ticket service" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLQVkCSN_8jC9QLLYI31UYJoBJvqvkU0bBnJ1O_F2551Kjw8GZdHHz_eWIxsRK8Aa0Mn5W2jFW2IMrNy7inJTDMGwmPWELuIDO4FJVD9wJibaV_KQUs6YHb8Ds7sSLgE7qXs1qtGkzc2I4uQqH6IoUTo_8AS_sGnS1B1Q8C1hxLYrolIWOc8Xg-avwWdYSGRScaP2swLOsFKFQZLEmgiDjG_fRHqx6pt2_MWQFvixJNeqlcO1UAYqRmxB6GnZ3OzRV6NvfOtywbdM");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Билеты в кино</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Новинки проката в Kino.kz</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Перейти</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Spacer -->
+<div class="h-4 bg-background-light dark:bg-background-dark"></div>
+<!-- Chips: Category Filters -->
+<div class="flex gap-2 p-4 overflow-x-auto no-scrollbar">
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<p class="text-black text-sm font-medium leading-normal">Все</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 pl-4 pr-4">
+<p class="text-black dark:text-white text-sm font-medium leading-normal">Транспорт</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 pl-4 pr-4">
+<p class="text-black dark:text-white text-sm font-medium leading-normal">Развлечения</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 pl-4 pr-4">
+<p class="text-black dark:text-white text-sm font-medium leading-normal">Страхование</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 pl-4 pr-4">
+<p class="text-black dark:text-white text-sm font-medium leading-normal">Подписки</p>
+</div>
+</div>
+<!-- Image Grid: All Services -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-3 pb-3 items-center text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl bg-gray-200 dark:bg-white/10 flex items-center justify-center" data-alt="Yandex Go service logo">
+<img alt="Yandex Go" class="w-20 h-20 rounded-lg object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf-8DhA-IpB3G4j00AYTi4glJWUZME9kQM8ZtgM9ovSUxlmq8mHFxcZ_xighDAnbOXbmziGAMIqFhpEvxKyaoIIO1ELj8h90vFGh46QulZD5xtj8mNM65RDIa_SHEvjJSJBR_jNFaODpwIP1CPmw9YyuNweYi3Ju_PTj4SSN4rdZMRMs8RcD4-hyjZXR8NzRJ5EW16G65eB9NfxzS7h61N4laWcx5vqoK26klfbrjWDm061SG052F1IWzJFDriK7RrLUtzx3tpgjA"/>
+</div>
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Yandex Go</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Такси и доставка</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 items-center text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl bg-gray-200 dark:bg-white/10 flex items-center justify-center" data-alt="Aviata.kz service logo">
+<img alt="Aviata.kz" class="w-20 h-20 rounded-lg object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdd9vWSF78BvnxwWxSIEzZFFnCd4V-WlO4uEnqL1KQ0C1RKwaS5Obek06D_h_4x0267MrhDgOwEnAmZdrV50-bEwVlCdeQ1lH9gW75vOip5jeivTsh0SttIFFpHf1MntpxzVh7nGVhCYeIOP0IOKz7V7pDZ3dO8HKo9SE8cFYz1KjPeey4cEi5FgwKEQqPEYCA7luNT9vJe9Yf2KFKZLXbfA7nuMYR_0tC_chB9nq6rUi36-lxYMVO1D93m3UFIJYh-I91If8f11U"/>
+</div>
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Aviata.kz</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Авиа и ж/д билеты</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 items-center text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl bg-gray-200 dark:bg-white/10 flex items-center justify-center" data-alt="Kino.kz service logo">
+<img alt="Kino.kz" class="w-20 h-20 rounded-lg object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDot95zPLjmUAoGYtSKHLt3w0jpAnVDdDm45NkbCW98vdSwWHMJlakNn4YJTiCEHM-MspHFEwngtk-A20JqDhIyrZT8SchndYlexVEvnhJBl22G0T0your3ssKBDkynZGlO7hN165XACHJLVJPBbNCoswlHYoLJFfqRdzpgYqgObNXixCpJOZL3dyB2e6XiGrh5CLod8mLonoXUgZd3dlsH1Uuma79JjUms900T-3B8eamTDUhL_0boLOGg2Ire3x_54LyLeLHqx_M"/>
+</div>
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Kino.kz</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Билеты в кино</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 items-center text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl bg-gray-200 dark:bg-white/10 flex items-center justify-center" data-alt="Freedom Insurance service logo">
+<img alt="Freedom Insurance" class="w-20 h-20 rounded-lg object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD65Qk8eE1bVLgnXCCd5NXxGdEgECu46qFyKtLDDM4k-YEkiN5Z_bfaEJPP4-klviHFXNuwrPfI0CC-bvxvH1zKRiY3Dq3KpK4TblUtH7znuDWKBaPIFublZKlVm8Xut5iOkn4tdVjn35J75Ei9og75vYWJqc8J9HcXKhRBXv-beCKDX_CxXbXGUZB9VGE10JElp1UPTQTlieCloQFUdJKQ1hsh5iG2NLvhhwTopaff6LbOS9uK-u7CyKGjGgc8BzYrXOADsB7W8WQ"/>
+</div>
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Freedom Insurance</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Страховые полисы</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 items-center text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl bg-gray-200 dark:bg-white/10 flex items-center justify-center" data-alt="Yandex Plus service logo">
+<img alt="Yandex Plus" class="w-20 h-20 rounded-lg object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkikp9tQ3TBfphtvR6Dx9gNmNMS87ZyaFBIJihPXhOwOVg9tYE5XBXKzQYCus4FLdtMKYfmJpCAY_eFOy6DICCOQTQscl8_R914s71PmplyWWwdTQ8VQ7SC5pOcd6ltFwKFoYZIwCdIw7QFKiWUzY-g6SQypZRcrndJV6MMm7qLHHZWTyp7yburCZ7m9VNOsoBdx66PcDcVmQL-SwpIKJzo55MA69feXRjPq059zMRZ8ejPY72atmJRqxeVRIhMM02UyKf8QQE9SI"/>
+</div>
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Yandex Plus</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Подписки</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 items-center text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl bg-gray-200 dark:bg-white/10 flex items-center justify-center" data-alt="Egov.kz service logo">
+<img alt="Egov.kz" class="w-20 h-20 rounded-lg object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBElSNzxrH8WheRFNvOZ6nFk-UvtQmp3VDNaXQe6vh8gZLRrlrVrhXYzyXLVUCN8Z688dObaR75YTNWPPkSJd_51Qm3opz4qHwmUIHbGgcjwHraZc-wfQ_U60euAGH_StD8ZySjmAqaXCqieY2e-IG8hiqrSd2p7iWBKU90gIhh5b9ZbQHWBIHXZe9A8RFeaxRRN2E7q1Y1oaC6ja8LyUKQEKrqo0OHslyX195CN7w7jaV63Bgt_oAQJfujB_I__a4FJZ0Z4F1dNbM"/>
+</div>
+<div>
+<p class="text-black dark:text-white text-base font-medium leading-normal">Egov.kz</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Госуслуги</p>
+</div>
+</div>
+</div>
+</div>
+<script src="app.js"></script>
+</body></html>

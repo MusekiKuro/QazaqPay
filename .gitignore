@@ -1,0 +1,18 @@
+# Node modules (библиотеки JS)
+node_modules/
+npm-debug.log
+
+# Capacitor / Android build files
+android/app/build/
+android/.gradle/
+android/local.properties
+android/.idea/
+android/app/app.iml
+android/QazaqPay.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Dist / Build output
+dist/

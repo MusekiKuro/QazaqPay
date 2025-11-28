@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Финансы</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102218",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-md flex-col overflow-x-hidden bg-background-light dark:bg-background-dark">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 p-4 pb-2 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-zinc-500 dark:text-zinc-400">arrow_back_ios_new</span>
+</div>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-white">Финансы</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex h-12 max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-transparent text-base font-bold leading-normal tracking-[0.015em] text-zinc-900 dark:text-white min-w-0 p-0">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+<!-- Tabs -->
+<div class="sticky top-[60px] z-10 bg-background-light/80 px-4 pb-3 pt-2 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex border-b border-zinc-200 dark:border-white/20 gap-2">
+<a class="flex flex-1 flex-col items-center justify-center border-b-[3px] border-b-primary pb-[13px] pt-2" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] text-zinc-900 dark:text-white">Карты</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center border-b-[3px] border-b-transparent pb-[13px] pt-2" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] text-zinc-500 dark:text-zinc-400">Кредиты</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center border-b-[3px] border-b-transparent pb-[13px] pt-2" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] text-zinc-500 dark:text-zinc-400">Вклады</p>
+</a>
+</div>
+</div>
+<main class="flex-grow p-4">
+<!-- Card -->
+<div class="mb-6">
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-white/50 dark:bg-white/10 shadow-sm">
+<div class="w-full rounded-xl p-4">
+<img class="w-full aspect-[1.58] object-cover rounded-lg" data-alt="A stylish green and black credit card design with abstract wave patterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKvf8ALBoTB9jW3bVwGV6bj1TuwvTLzAPdorOhqdabbxwDWXFnBn-_z3_uVKep1Tq7cQrcfmF1z-raVM1NCBFMjWZSENQLwXzzQZtuzjAUDCwXmItEQnnipsq02jvz8HjPbb9qPR9fIVLSEhywx4w0t9wuIk2_LOGcUdQO9j8N7zFdO-xGl5EmxfOMgYgxBaLd57cJ3aPTzkdvUL7CN-9BI5qhsO_CjzZaoL8ow-qx-sf7DzdoEuIBvL_3vObjo9jVXTaz4H75yj4"/>
+</div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-3 px-4 pb-4 pt-2">
+<p class="text-3xl font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-white">1 234 567.89 ₸</p>
+<div class="flex items-end justify-between gap-3">
+<div class="flex flex-col gap-1">
+<p class="text-base font-normal leading-normal text-zinc-600 dark:text-zinc-400">**** 1234</p>
+<p class="text-base font-normal leading-normal text-zinc-600 dark:text-zinc-400">Основная карта</p>
+</div>
+<button class="flex h-10 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-4 text-sm font-medium leading-normal text-background-dark">
+<span class="truncate">Операции</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Button Group -->
+<div class="flex justify-stretch">
+<div class="flex flex-1 flex-wrap justify-between gap-3">
+<button class="flex min-w-[84px] flex-1 basis-1/3 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl bg-white/50 dark:bg-white/10 p-3 text-sm font-bold leading-normal tracking-[0.015em] text-zinc-900 dark:text-white">
+<span class="material-symbols-outlined">lock</span>
+<span class="truncate">Блокировать</span>
+</button>
+<button class="flex min-w-[84px] flex-1 basis-1/3 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl bg-white/50 dark:bg-white/10 p-3 text-sm font-bold leading-normal tracking-[0.015em] text-zinc-900 dark:text-white">
+<span class="material-symbols-outlined">tune</span>
+<span class="truncate">Лимиты</span>
+</button>
+<button class="flex min-w-[84px] flex-1 basis-1/3 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl bg-white/50 dark:bg-white/10 p-3 text-sm font-bold leading-normal tracking-[0.015em] text-zinc-900 dark:text-white">
+<span class="material-symbols-outlined">badge</span>
+<span class="truncate">Реквизиты</span>
+</button>
+</div>
+</div>
+<!-- Section Header -->
+<h2 class="pb-3 pt-8 text-xl font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-white">Отчёт по расходам</h2>
+<!-- Expense Report Chart -->
+<div class="rounded-xl bg-white/50 dark:bg-white/10 p-4">
+<div class="flex flex-col items-center gap-4 sm:flex-row">
+<div class="relative flex h-36 w-36 items-center justify-center">
+<svg class="h-full w-full -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-current text-green-200 dark:text-green-800" cx="18" cy="18" fill="none" r="15.9155" stroke-width="3"></circle>
+<circle class="stroke-current text-primary" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="80, 20" stroke-width="3"></circle>
+<circle class="stroke-current text-yellow-500" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="15, 85" stroke-dashoffset="-80" stroke-width="3"></circle>
+<circle class="stroke-current text-blue-500" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="5, 95" stroke-dashoffset="-95" stroke-width="3"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="text-xs text-zinc-500 dark:text-zinc-400">Всего</span>
+<span class="text-xl font-bold text-zinc-900 dark:text-white">125 430₸</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 self-stretch">
+<div class="flex items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-primary"></div>
+<span class="text-sm text-zinc-600 dark:text-zinc-300">Супермаркеты</span>
+<span class="ml-auto font-medium text-zinc-900 dark:text-white">84 500 ₸</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-yellow-500"></div>
+<span class="text-sm text-zinc-600 dark:text-zinc-300">Транспорт</span>
+<span class="ml-auto font-medium text-zinc-900 dark:text-white">21 300 ₸</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-blue-500"></div>
+<span class="text-sm text-zinc-600 dark:text-zinc-300">Кафе и рестораны</span>
+<span class="ml-auto font-medium text-zinc-900 dark:text-white">19 630 ₸</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<div class="sticky bottom-0 z-10 mt-auto border-t border-zinc-200 dark:border-white/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg p-2 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Главная</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg p-2 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">swap_horiz</span>
+<span class="text-xs font-medium">Платежи</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg p-2 text-primary" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="text-xs font-bold">Финансы</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg p-2 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="text-xs font-medium">История</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg p-2 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">more_horiz</span>
+<span class="text-xs font-medium">Ещё</span>
+</a>
+</div>
+</div>
+</div>
+<script src="app.js"></script>
+</body></html>

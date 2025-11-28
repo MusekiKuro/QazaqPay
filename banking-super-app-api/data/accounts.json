@@ -1,0 +1,57 @@
+[
+  {
+    "id": "acc_1",
+    "userId": "user_1",
+    "type": "card",
+    "currency": "KZT",
+    "balance": 450000,
+    "cardNumber": "4400430112345678",
+    "maskedCard": "**** **** **** 5678",
+    "status": "active",
+    "createdAt": "2025-01-15T10:05:00.000Z"
+  },
+  {
+    "id": "acc_2",
+    "userId": "user_1",
+    "type": "savings",
+    "currency": "KZT",
+    "balance": 1250000,
+    "cardNumber": null,
+    "maskedCard": null,
+    "status": "active",
+    "createdAt": "2025-01-20T11:00:00.000Z"
+  },
+  {
+    "id": "acc_3",
+    "userId": "user_1",
+    "type": "card",
+    "currency": "USD",
+    "balance": 3500,
+    "cardNumber": "5536914012349876",
+    "maskedCard": "**** **** **** 9876",
+    "status": "active",
+    "createdAt": "2025-02-01T09:30:00.000Z"
+  },
+  {
+    "id": "acc_4",
+    "userId": "user_2",
+    "type": "card",
+    "currency": "KZT",
+    "balance": 780000,
+    "cardNumber": "4400430198765432",
+    "maskedCard": "**** **** **** 5432",
+    "status": "active",
+    "createdAt": "2025-02-20T14:35:00.000Z"
+  },
+  {
+    "id": "acc_5",
+    "userId": "user_2",
+    "type": "account",
+    "currency": "KZT",
+    "balance": 250000,
+    "cardNumber": null,
+    "maskedCard": null,
+    "status": "active",
+    "createdAt": "2025-02-20T14:40:00.000Z"
+  }
+]

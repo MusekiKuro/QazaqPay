@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-Security-Policy" content="default-src * 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src * 'self' 'unsafe-inline'; media-src *">
+<title>Главный экран "Дом"</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102218",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-md flex-col bg-background-light dark:bg-background-dark group/design-root" style="font-family: Inter, 'Noto Sans', sans-serif;">
+<div class="flex flex-col grow">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar with initials AS" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB226krEOEwx80XXkrIweyWNZdZYVd_1P5AJCkyn4uXEfyLTYdZjtAo3QBgdIOFk0BfWX6zO54cR7KCwsxtOAfYzgAaKGG-i8cVrXfvdIsdF5zza1IMeIFtrwC1h-Lng-HDMaZ0OuhQPJKE6tktYVOsoG9MlwAvcQW1mR7_cXsb35JXF6Ctk4MmrKa86COZWemTpcC-QIZuF0MsuZhIblZjOzNIVCzMTdN8gu3Yyh1QoZV0gABpQsJ7CeO2LC-5no5rx3DyG8OEGc8");'></div>
+</div>
+<h2 class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 ml-2">Здравствуйте, Асхат</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="relative flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-zinc-200/50 dark:bg-white/10 text-zinc-900 dark:text-white">
+<span class="material-symbols-outlined">notifications</span>
+<div class="absolute top-2 right-2.5 h-2 w-2 rounded-full bg-primary"></div>
+</button>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-2 p-4 pt-2">
+<p class="text-zinc-600 dark:text-[#92c9a9] text-sm font-medium leading-normal">Финансовое здоровье</p>
+<div class="rounded-full bg-zinc-200 dark:bg-[#326748]">
+<div class="h-2 rounded-full bg-primary" style="width: 75%;"></div>
+</div>
+</div>
+<!-- Carousel -->
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch p-4 pt-2 gap-3">
+<div class="flex h-full w-60 flex-1 flex-col gap-3 rounded-xl bg-zinc-100 dark:bg-[#193324] p-4">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col" data-alt="Credit card design for Kaspi Gold with a gold pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCqk8FL8aSgebOiGhFua4gUnt3J1fFerTihivTW0uJSbKHscaAlkX1IfsEWnqOwNdMJTucwip7w6dKm5UFjcctGjx2UxCNBacw2416xa3xZxTB9ymVBg22JCCGwHSTniufBNsBf1rVRYulWR8XSNBYGDUQKRr8YWSsxJ-cPuHl_Nqb7t8LREY-_Pd3-boNJd62OudfFK-EJRxgKRX0tOOiqADpxp-uKQqoQCJ4EzAhoKrtMdRCwaj9YIWe161EFLJieAh447iRll2k");'></div>
+<div>
+<p class="text-zinc-900 dark:text-white text-base font-medium leading-normal">Kaspi Gold</p>
+<p class="text-zinc-600 dark:text-[#92c9a9] text-2xl font-bold leading-normal tracking-tight">1 240 890.50 ₸</p>
+</div>
+</div>
+<div class="flex h-full w-60 flex-1 flex-col gap-3 rounded-xl bg-zinc-100 dark:bg-[#193324] p-4">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col" data-alt="Credit card design for Deposit with a blue and green abstract design" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKSBxoWTzHma96f-aACTa_PLzL1LLBUfg5ST2Y4pKCCzJIm_wWPNvCMck2F3mGceIpuT2V0NR8VJpSrG1xWb1Lho3EYltqzsE5xBS3EitDlPjt7CTfwULVIs1iTMBb4CrFdv5AXEiANBRE7Nm8wSENF5uEPl_Js-uzagJsqMDeNwNi4jFV6lqGxsId6UzM17txpwsqkCrMm4tTcOplB34_XnyH2-TwF0AZ6MT-QzaF--BOXtUGDdIH9yuE-4reqN1yyXBhNoCJ6cQ");'></div>
+<div>
+<p class="text-zinc-900 dark:text-white text-base font-medium leading-normal">Депозит</p>
+<p class="text-zinc-600 dark:text-[#92c9a9] text-2xl font-bold leading-normal tracking-tight">5 000.00 $</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Header -->
+<h3 class="text-zinc-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Быстрые действия</h3>
+<!-- Text Grid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4 pt-2">
+<div class="flex flex-1 gap-3 rounded-xl border border-zinc-200 dark:border-[#326748] bg-zinc-100 dark:bg-[#193324] p-4 items-center">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">swap_horiz</span>
+<h2 class="text-zinc-900 dark:text-white text-base font-bold leading-tight">Перевод</h2>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-zinc-200 dark:border-[#326748] bg-zinc-100 dark:bg-[#193324] p-4 items-center">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">receipt_long</span>
+<h2 class="text-zinc-900 dark:text-white text-base font-bold leading-tight">Оплата</h2>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-zinc-200 dark:border-[#326748] bg-zinc-100 dark:bg-[#193324] p-4 items-center">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">qr_code_scanner</span>
+<h2 class="text-zinc-900 dark:text-white text-base font-bold leading-tight">QR</h2>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-zinc-200 dark:border-[#326748] bg-zinc-100 dark:bg-[#193324] p-4 items-center">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">south</span>
+<h2 class="text-zinc-900 dark:text-white text-base font-bold leading-tight">Пополнить</h2>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-zinc-200 dark:border-[#326748] bg-zinc-100 dark:bg-[#193324] p-4 items-center">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">star</span>
+<h2 class="text-zinc-900 dark:text-white text-base font-bold leading-tight">Избранное</h2>
+</div>
+</div>
+<!-- Recent Transactions Section -->
+<h3 class="text-zinc-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Последние операции</h3>
+<div class="flex flex-col gap-2 px-4">
+<div class="flex items-center gap-4 rounded-xl bg-zinc-100 dark:bg-[#193324] p-3">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-zinc-200 dark:bg-[#326748]">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">shopping_cart</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-zinc-900 dark:text-white">Magnum</p>
+<p class="text-sm text-zinc-500 dark:text-gray-400">Покупка продуктов</p>
+</div>
+<p class="font-bold text-zinc-900 dark:text-white">-15 230 ₸</p>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-zinc-100 dark:bg-[#193324] p-3">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-zinc-200 dark:bg-[#326748]">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">person</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-zinc-900 dark:text-white">Маме</p>
+<p class="text-sm text-zinc-500 dark:text-gray-400">Перевод</p>
+</div>
+<p class="font-bold text-zinc-900 dark:text-white">-50 000 ₸</p>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-zinc-100 dark:bg-[#193324] p-3">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-zinc-200 dark:bg-[#326748]">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">call</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-zinc-900 dark:text-white">Beeline</p>
+<p class="text-sm text-zinc-500 dark:text-gray-400">Оплата мобильной связи</p>
+</div>
+<p class="font-bold text-zinc-900 dark:text-white">-2 500 ₸</p>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="sticky bottom-0 mt-8 w-full bg-zinc-100/80 dark:bg-background-dark/80 backdrop-blur-lg border-t border-zinc-200 dark:border-white/10">
+<div class="flex h-20 items-center justify-around px-2">
+  <a href="main.html" class="flex flex-col items-center gap-1 text-primary">
+    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+    <p class="text-xs font-bold">Дом</p>
+  </a>
+  <a href="platezhi.html" class="flex flex-col items-center gap-1 text-zinc-500 dark:text-gray-400">
+    <span class="material-symbols-outlined">payments</span>
+    <p class="text-xs font-medium">Платежи</p>
+  </a>
+  <a href="finance.html" class="flex flex-col items-center gap-1 text-zinc-500 dark:text-gray-400">
+    <span class="material-symbols-outlined">monitoring</span>
+    <p class="text-xs font-medium">Финансы</p>
+  </a>
+  <a href="service.html" class="flex flex-col items-center gap-1 text-zinc-500 dark:text-gray-400">
+    <span class="material-symbols-outlined">widgets</span>
+    <p class="text-xs font-medium">Сервисы</p>
+  </a>
+  <a href="profile.html" class="flex flex-col items-center gap-1 text-zinc-500 dark:text-gray-400">
+    <span class="material-symbols-outlined">person</span>
+    <p class="text-xs font-medium">Профиль</p>
+  </a>
+</div>
+
+</div>
+</div>
+</div>
+<script src="app.js"></script>
+</body></html>

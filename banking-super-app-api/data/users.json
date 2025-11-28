@@ -1,0 +1,26 @@
+[
+  {
+    "id": "user_1",
+    "phone": "+77001234567",
+    "password": "$2a$10$X8qV6Y5pQZN.vQJZzOQ1wOkYHJXPQBmk5uJ6qkM8xH.4N0VZY0lYm",
+    "name": "Айдын Серикбаев",
+    "mfaEnabled": true,
+    "createdAt": "2025-01-15T10:00:00.000Z"
+  },
+  {
+    "id": "user_2",
+    "phone": "+77017654321",
+    "password": "$2a$10$X8qV6Y5pQZN.vQJZzOQ1wOkYHJXPQBmk5uJ6qkM8xH.4N0VZY0lYm",
+    "name": "Алия Нурланова",
+    "mfaEnabled": true,
+    "createdAt": "2025-02-20T14:30:00.000Z"
+  },
+  {
+    "id": "user_1764320316713_f26g6za86",
+    "phone": "+77001234667",
+    "password": "$2a$10$EgElIyReIjLjrB09/ksoMOe0qTfkgKkpjtIZavdcNcBk3wsvCs72S",
+    "name": "Test User",
+    "mfaEnabled": true,
+    "createdAt": "2025-11-28T08:58:36.714Z"
+  }
+]
