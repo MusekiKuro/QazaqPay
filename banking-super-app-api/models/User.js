@@ -1,24 +1,35 @@
-// Модель пользователя
-class User {
-  constructor({ id, phone, password, name, createdAt, mfaEnabled = false }) {
-    this.id = id;
-    this.phone = phone;
-    this.password = password;
-    this.name = name;
-    this.mfaEnabled = mfaEnabled;
-    this.createdAt = createdAt || new Date().toISOString();
-  }
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/database');
 
-  // Безопасное представление (без пароля)
-  toSafeObject() {
-    return {
-      id: this.id,
-      phone: this.phone,
-      name: this.name,
-      mfaEnabled: this.mfaEnabled,
-      createdAt: this.createdAt
-    };
+const User = sequelize.define('User', {
+  id: {
+    type: DataTypes.UUID,
+    defaultValue: DataTypes.UUIDV4, // Автоматический ID
+    primaryKey: true
+  },
+  phone: {
+    type: DataTypes.STRING,
+    unique: true,
+    allowNull: false
+  },
+  password: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  name: {
+    type: DataTypes.STRING
+  },
+  mfaEnabled: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: true
   }
-}
+});
+
+// Метод для удаления пароля при отправке на фронт
+User.prototype.toSafeObject = function() {
+  const values = { ...this.get() };
+  delete values.password;
+  return values;
+};
 
 module.exports = User;

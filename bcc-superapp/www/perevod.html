@@ -99,8 +99,9 @@
 <p class="text-zinc-900 dark:text-white text-base font-medium leading-normal pb-2">Сумма</p>
 <input
   id="amount"
+  type="number"
   class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-zinc-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-zinc-200 dark:border-[#326748] bg-zinc-100 dark:bg-[#193324] focus:border-primary h-14 placeholder:text-zinc-500 dark:placeholder:text-[#92c9a9] p-[15px] text-base font-normal leading-normal"
-  placeholder="0 ₸"
+  placeholder="0"
   value=""
 />
 
@@ -116,7 +117,7 @@
 <input
   id="description"
   class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-zinc-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-zinc-200 dark:border-[#326748] bg-zinc-100 dark:bg-[#193324] focus:border-primary h-14 placeholder:text-zinc-500 dark:placeholder:text-[#92c9a9] p-[15px] text-base font-normal leading-normal"
-  placeholder="Сообщение получателю (необязательно)"
+  placeholder="Сообщение получателю"
   value=""
 />
 
@@ -126,9 +127,13 @@
 </div>
 <!-- Action Button -->
 <div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light dark:bg-background-dark border-t border-zinc-200 dark:border-[#326748]">
-<button class="w-full ... transition-opacity disabled:opacity-50" disabled="">
-                Отправить
-            </button>
+<button 
+    id="transferBtn" 
+    type="button"
+    class="w-full bg-primary text-black dark:text-black font-bold text-base py-4 rounded-xl shadow-lg shadow-primary/20 hover:bg-opacity-90 transition-opacity"
+>
+    Отправить
+</button>
 
 </div>
 </div>

@@ -1,32 +1,24 @@
-// Сервис для работы со счетами
-const DataManager = require('../utils/dataManager');
-
-const accountsDB = new DataManager('accounts.json');
+const Account = require('../models/Account');
 
 const accountsService = {
-  // Получить все счета пользователя
   async getUserAccounts(userId) {
-    const accounts = accountsDB.find(account => account.userId === userId);
-    return accounts;
+    return await Account.findAll({ where: { userId } });
   },
 
-  // Получить конкретный счёт
   async getAccountById(accountId, userId) {
-    const account = accountsDB.findById(accountId);
+    const account = await Account.findOne({ where: { id: accountId } });
     
-    // Проверяем, что счёт принадлежит пользователю
     if (account && account.userId !== userId) {
       const error = new Error('Доступ запрещён');
       error.statusCode = 403;
       throw error;
     }
-
     return account;
   },
-
-  // Обновить баланс счёта
+  
+  // Внутренний метод для транзакций
   async updateBalance(accountId, newBalance) {
-    return accountsDB.update(accountId, { balance: newBalance });
+     await Account.update({ balance: newBalance }, { where: { id: accountId } });
   }
 };
 
